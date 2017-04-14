@@ -24,4 +24,11 @@ public class SortTest {
         sort.sort(array);
         System.out.println(Arrays.toString(array));
     }
+
+    @Test
+    public void bubbleSort(){
+        BubbleSort sort = new BubbleSort();
+        sort.sort(array);
+        System.out.println(Arrays.toString(array));
+    }
 }
