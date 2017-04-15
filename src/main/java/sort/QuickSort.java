@@ -1,17 +1,10 @@
 package sort;
 
-import java.util.Arrays;
-
 /**
+ * 快速排序
  * Created by Zhao Li on 2017/4/13.
  */
 public class QuickSort implements Sorting{
-
-    public static void main(String[] args){
-        Integer[] array = {72, 6, 57, 88, 60, 42, 83, 73, 48, 85};
-        quick(array, 0, array.length - 1);
-        System.out.println(Arrays.toString(array));
-    }
 
     public static void quick(Integer[] arr, int l, int r){
         if(l >= r) return;
@@ -38,5 +31,10 @@ public class QuickSort implements Sorting{
     @Override
     public void sort(Integer[] array) {
         quick(array, 0, array.length-1);
+    }
+
+    @Override
+    public String getName() {
+        return "QuickSort";
     }
 }

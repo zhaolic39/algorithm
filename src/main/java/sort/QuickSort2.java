@@ -15,6 +15,11 @@ public class QuickSort2 implements Sorting{
         }
     }
 
+    @Override
+    public String getName() {
+        return "QuickSort2";
+    }
+
     public static Integer[] quick2(Integer[] arr){
         if(arr.length <= 1) return arr;
 

@@ -23,4 +23,9 @@ public class BubbleSort implements Sorting{
             System.out.println(Arrays.toString(array));
         }
     }
+
+    @Override
+    public String getName() {
+        return "BubbleSort";
+    }
 }

@@ -5,4 +5,6 @@ package sort;
  */
 public interface Sorting {
     void sort(Integer[] array);
+
+    String getName();
 }

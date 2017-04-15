@@ -31,4 +31,25 @@ public class SortTest {
         sort.sort(array);
         System.out.println(Arrays.toString(array));
     }
+
+    @Test
+    public void insertSort(){
+        InsertSort sort = new InsertSort();
+        sort.sort(array);
+        System.out.println(Arrays.toString(array));
+    }
+
+    @Test
+    public void selectionSort(){
+        SelectionSort sort = new SelectionSort();
+        sort.sort(array);
+        System.out.println(Arrays.toString(array));
+    }
+
+    @Test
+    public void mergeSort(){
+        MergeSort sort = new MergeSort();
+        sort.sort(array);
+        System.out.println(Arrays.toString(array));
+    }
 }
