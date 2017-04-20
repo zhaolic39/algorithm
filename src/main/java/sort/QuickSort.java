@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.Arrays;
+
 /**
  * 快速排序
  * Created by Zhao Li on 2017/4/13.
@@ -26,6 +28,7 @@ public class QuickSort implements Sorting{
         }
         quick(arr, l, i);
         quick(arr, i+1, r);
+        System.out.println(Arrays.toString(arr));
     }
 
     @Override
