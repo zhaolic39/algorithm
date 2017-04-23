@@ -1,5 +1,6 @@
 package sort;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -10,6 +11,11 @@ import java.util.Arrays;
 public class SortTest {
     Integer[] array = {72, 6, 57, 88, 60, 42, 83, 73, 48, 85};
 
+
+    @Before
+    public void before(){
+        System.out.println(Arrays.toString(array));
+    }
 
     @Test
     public void quickSort(){
