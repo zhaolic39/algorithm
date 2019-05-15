@@ -58,4 +58,11 @@ public class SortTest {
         sort.sort(array);
         System.out.println(Arrays.toString(array));
     }
+
+    @Test
+    public void heapSort(){
+        HeapSort sort = new HeapSort();
+        sort.sort(array);
+        System.out.println(Arrays.toString(array));
+    }
 }
