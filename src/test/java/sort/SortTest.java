@@ -2,6 +2,7 @@ package sort;
 
 import org.junit.Before;
 import org.junit.Test;
+import sort2.BubbleSort2;
 
 import java.util.Arrays;
 
@@ -62,6 +63,15 @@ public class SortTest {
     @Test
     public void heapSort(){
         HeapSort sort = new HeapSort();
+        sort.sort(array);
+        System.out.println(Arrays.toString(array));
+    }
+
+
+
+    @Test
+    public void bubble2(){
+        BubbleSort2 sort = new BubbleSort2();
         sort.sort(array);
         System.out.println(Arrays.toString(array));
     }
